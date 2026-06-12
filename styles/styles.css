@@ -1,0 +1,104 @@
+/* I started my code by coping and pasting what we did in class because I liked the colours I picked out*/
+body{
+    background-color:rgb(25,25,25);
+    color:rgb(255, 247, 231);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*I created a div for my body and added the margen, where I went back to my HTML and took out my br for my sentences since
+I now have a more natural persaption of my page*/
+#cuerpo{
+         margin:auto;
+        width: 850px;
+        }
+
+/*In here the colours are the same as to the ones I was playing aroudn during class. There is no much to say other than colour and margen changes*/
+a{
+    color:rgb(146, 116, 186);
+    /*to remove the underline we use text-decoration*/
+    text-decoration:none;
+    margin-right: 100px;
+}
+/* This portion of the code changes the text when the cursor goes on top of it*/
+a:hover{
+    color: blueviolet;
+}
+/*change the link when the user clicks(important for mobile) a:active*/
+a:active{
+    color:rgb(85, 52, 129);
+}
+/*In here I typed h1 and h2 in different lines because I wanted them to have different sizes, in the main page they look ok but in the notes page it looks a bit weird,
+is there any suggestions you could provide me with*/
+h1 {
+    font-size:50px;
+    margin:0px 0;
+}
+h2{
+    font-size:40px;
+    margin:0px 0;
+}
+/*I started to play around from here on out, I tried using the direct name of the tag to change and modify my code so that it is a bit moved to the right. i found this
+by playing around with a set of code I found online. I am not entirely sure how it works, but moving stuff around has made me somewhat to understand*/
+/*COuld you be able to explain to me how justify-content works? I ran it through the validator and it got angry about how I was using it (justify-content: 450px) 
+and when I had it like that it was working just fine*/
+blockquote{
+   justify-content:center;
+    display: block;
+}
+h3{
+    font-size: 25px;
+}
+/*I discovered somethign peculiar. when trying to center my images I was having toruble so I googled something to see how i could do it. I did not understand the code
+at the time, not until I started trying to centrer my footer. In here I realized that the padding can help me center stuff... I also did the same stuff we did during class
+meaning, i did footer and then footer p, just in case I want to be fancy in teh future and add something else in that footer section*/
+footer{
+    padding-left: 400px;
+}
+footer p{
+    font-size:12.5px;
+}
+/*I used this because all my text was all wonky and was different sizes. I believe this way it is easier to see and to enjoy*/
+p{
+    font-size:18px;
+    text-align:justify;
+}
+/*discovered by accident that i could justify my text with text-align, I discovered it
+when I was trying to make my dl list the right size*/
+dl{
+    font-size:18px;
+    text-align: justify;
+}
+/*This following text was provided to me by the AI of my web browser, when I first founded I was still confused and didnt understand much. I started from the ground up of
+my website, which is why I make a lot of references to this code at the beginning. After playing around with the distribution of most of the page I figure out what the padding,
+the marging and height affect. Still I would love it if you could be able to explain more about the code and why is there inherit and auto within it. I tried putting other stuff
+in those places and it didn't work. I even tried deleting those parts and the code broke down. Then at some point I morfed my entire website and set the image in the middle
+of my screen. I came to thr conclusion of this code because it is what it made it work. I also tried using this for my links but it did not work, which is why i used #linked
+at the top to move them around because that was what gave me the wanted result*/
+#simon{
+  padding: inherit;
+  margin:auto;
+  height: 400px;
+  display: block;
+  /*I swear the shadow box is in the website it is just dark grey!*/
+  box-shadow:0 0 1px 2px black;
+}
+/*Changed the list dots into squares, and moved them to the middle of my page*/
+/*When changing stuff during the validator my links moved to the far right. I tried to adjust it but this was the best I could do*/
+#linked ul{
+    list-style:none;
+    display: flex;
+    padding-left:220px;
+    gap: 10px;
+}
+/*I played with my code for a bit to long, but after some googling and some moving around,
+I did what I wanted. I placed my bullet points horiszontally. I wanted to do this because I 
+think it makes the photo look good and also less awkward*/
+#hobbies{
+    list-style: square;
+    display: flex;
+    padding-left:325px;
+    gap: 20px;
+}
+/*changed the colour of the stuff mention in the rubric*/
+h1,footer{
+    background-color: rgb(32, 21, 57);
+}

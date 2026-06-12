@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Assignment 1</title>
+    <link href="styles/styles.css" rel="stylesheet">
 </head>
 <!-- I started my code by doing the body, where I could add the necessary
  information about me for the assignment-->
 <body>
+    <article>
+    <div id="cuerpo">
     <header>
         <h1>Alan Brandon Santiago Cervantes</h1>
         <h2><b>Algonquin College greatest coder</b></h2>
@@ -16,7 +19,7 @@
     </header>
     <!--In the article section I made the excecutive desition to add my information. I used h1 to give a title and then p to 
     add a small summarry bellow.-->
-    <nav>
+    <nav id="linked">
         <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="notes.html">Notes</a></li>
@@ -24,11 +27,12 @@
     </nav>
     <!--Added my links to navigate between both pages-->
         <article>
-            <h3><em>About Me</em></h3>
+            <h3>About <em>Me</em></h3>
         <!--I am going to use br instead of addign p to separate my text and dont have it go along the screen-->
-            <p>Hello! My name is Alan Brandon Santiago Cervantes,<br>
-                I am originally from Mexico but I have been living in Canada for about 10 years!<br>
-                I have a bachelor’s degree in communication and media studies with a minor in Film studies. <br>
+        <!--I have removed br since now I have a margen in the website and I can have a more natural separation-->
+            <p>Hello! My name is Alan Brandon Santiago Cervantes,
+                I am originally from Mexico but I have been living in Canada for about 10 years!
+                I have a bachelor’s degree in communication and media studies with a minor in Film studies. 
                 I  enjoy graphic design and look forward to become fluent in HTML</p>
         </article>
     <!--In the blockquote is where I decided to add my image, as well as the quote that inspires me.
@@ -42,14 +46,15 @@
         </blockquote>
     <!--Footter is used to add all the stuff that will continue to appear at the end of the page-->
     <article>
-        <h3><em>My Passions</em></h3>
-        <IMG SRC="images/me.JPG" height="400" alt="handsome guy sitting on an ice chair">
+        <h3>My Passions</h3>
+        <!--Removed height because I added it in CSS-->
+        <img src="images/me.JPG" id="simon" alt="handsome guy sitting on an ice chair">
         <!--I found out I can change the size of each independently outside of css, I had started by using css to change 
         the size of all my sebiste photos, but my picture was to small. So I looked to see a different way to size them-->
-            <ul>
-            <li><b>Photography</b></li>
-          
-            <li><b>Painting</b></li>
+            <ul id="hobbies">
+            <li>Photography</li>
+            <li>Painting</li>
+            <li>Coding</li>
             </ul>
         <!--My hobies are pretty simple, so I wanted to add a little description to make things more interesting. I picked this
         dt code because I can add a description and make things look cleaner-->
@@ -59,6 +64,8 @@
     copyright symbol to appear-->
         <p>&copy;2026 AlanSanCer</p>
     </footer>
+    </div>
+</article>
 </body>
 </html>
 <!--I had some issues trying to make my website get pushed, I created a new git for the assignment and I have tested it.
